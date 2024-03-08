@@ -35,15 +35,15 @@
     <label class="col-4">Pilihan Produk</label> 
     <div class="col-8">
       <div class="custom-control custom-radio custom-control-inline">
-        <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="tv"> 
+        <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="Tas"> 
         <label for="radio_0" class="custom-control-label">Tas</label>
       </div>
       <div class="custom-control custom-radio custom-control-inline">
-        <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="kulkas"> 
+        <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="Baju"> 
         <label for="radio_1" class="custom-control-label">Baju</label>
       </div>
       <div class="custom-control custom-radio custom-control-inline">
-        <input name="radio" id="radio_2" type="radio" class="custom-control-input" value="mesincuci"> 
+        <input name="radio" id="radio_2" type="radio" class="custom-control-input" value="Sepatu"> 
         <label for="radio_2" class="custom-control-label">Sepatu</label>
       </div>
     </div>
@@ -87,13 +87,13 @@
           <br>
 
         <?php
-            if( $_POST[ 'radio' ] == "tv" && $_POST[ 'jumlah'] >= 1){
+            if( $_POST[ 'radio' ] == "Tas" && $_POST[ 'jumlah'] >= 1){
               $harga = 4200000 * $_POST[ 'jumlah' ];
               echo "Total Harga : " . number_format($harga,0,',',',',);
-            } elseif ($_POST[ 'radio' ] == "kulkas" && $_POST[ 'jumlah' ] >=1 ){
+            } elseif ($_POST[ 'radio' ] == "Baju" && $_POST[ 'jumlah' ] >=1 ){
               $harga = 3100000 * $_POST[ 'jumlah' ];
               echo "Total Harga : " . number_format($harga,0,',',',',);
-            } elseif ($_POST[ 'radio' ] == "mesincuci" && $_POST[ 'jumlah' ] >=1 ){
+            } elseif ($_POST[ 'radio' ] == "Sepatu" && $_POST[ 'jumlah' ] >=1 ){
               $harga = 3000000 * $_POST[ 'jumlah' ];
               echo "Total Harga : " . number_format($harga,0,',',',',);
             }
